@@ -1,48 +1,54 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>Тут нужно что-нибудь написать</title>
-  <link href="external.css" rel="stylesheet">
+  <title>kaktotakoioi</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-        <div class="cm-e-menu">
-            <ul>
-                <li class="topmenu">
-                    <a href="index.html">главная</a>
-                </li>
-                <li class="topmenu">
-                    <a>JS примеры</a>
-                    <ul class="submenu">
-                        <li><a  href="js.html">JS</a></li>
-                            <ul class="submenu">
-                                <li><a>hide sidebar</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-<li class="topmenu">
-                    <a > CSS примеры</a>
-                    <ul class="submenu">
-                        <li><a href="css.html">CSS</a></li>
-                            <ul class="submenu">
-                                <li><a>hide sidebar</a></li>
-                            </ul>
-                    </ul>
-                <li class="topmenu"><a href="food.html">полезная и вкусная еда</a></li>
-<li class="topmenu"><a href="class.html">Мой Класс</a></li>
-        </div>
-<br>
+<nav role="navigation">
+<ul>
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="#">Информатика</a>
+    <ul>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="js.html">JS</a></li>
+    </ul>
+  </li>
+  <li><a href="page1.html">Мой класс</a></li>
+  <li><a href="fruits.html">Фрухты</a></li>
+</ul>
+</nav>
  <br>
-  <br>
-  JAVA SCRIPT
-  <br>
-  <a  href="js1.html">1.15</a>
+<br>
+<br>
+<br>
+<br>
+<br>  <a  href="js1.html">1.15</a>
  <br>
   <br>
   <a  href="js2.html">1.61</a>
   </body>
 </html>
+
+<br>
+<br><html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+</head>
+<body>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
+
