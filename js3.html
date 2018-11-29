@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+<style>
+  BODY {
+  align-items: left;
+  justify-content: left;
+  background: white;
+  font-family: Georgia;
+}
+fl {
+  font-size: 50px;
+  font-weight: normal;
+  cursor: pointer;
+  overflow: hidden;
+  text-shadow: 0 0 tomato,
+               0 0 yellowgreen,
+               0 0 skyblue;
+  color: transparent;
+  transition: all 1s;
+  }
+fl:hover {
+    text-shadow: -400px 0 tomato,
+                 400px 0 yellowgreen,
+                 0 0 skyblue;
+    }
+</style>
+</head>
+<body>
+<script>
+function func(){
+x=document.getElementById("a_znach").value;
+
+n=x%10
+a=(x-n)/10
+x=n*100+a
+document.getElementById("fa").innerHTML ="<fl>"+"2.25= "+x+"</fl>";
+a=x%100
+b=a*10
+n=(x-x%100)/100
+x=b+n
+document.getElementById("fc").innerHTML ="<fl>"+"2.27= "+x+"</fl>";
+
+
+document.getElementById("fe").innerHTML ="<fl>"+"2.29= "+x+"</fl>";
+
+
+document.getElementById("fg").innerHTML ="<fl>"+"2.31= "+x+"</fl>";
+
+
+document.getElementById("fi").innerHTML ="<fl>"+"2.33= "+x+"</fl>";
+}
+</script>
+<br>
+
+<br>
+2.25-2.33
+<br>
+a=<input type="text" value="0" id="a_znach">
+<br>
+<br>
+<button onclick="func()">ответ</button>
+<br>
+<br>
+<div id="fa"></div>
+<br>
+<br>
+<br>
+<div id="fc"></div>
+<br>
+<br>
+<br>
+<div id="fe"></div>
+<br>
+<br>
+<br>
+<div id="fg"></div>
+<br>
+<br>
+<br>
+<div id="fi"></div>
+</body>
+</html>
