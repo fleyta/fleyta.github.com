@@ -31,34 +31,25 @@ fl:hover {
 <body>
 <script>
 function func(){
-x=document.getElementById("a_znach").value;
-
-n=x%10
-a=(x-n)/10
-x=n*100+a
+n=document.getElementById("a_znach").value;
+x=n%10*100+(n-n%10)/10
 document.getElementById("fa").innerHTML ="<fl>"+"2.25= "+x+"</fl>";
-a=x%100
-b=a*10
-n=(x-x%100)/100
-x=b+n
+x=(n%100)*10+(n-n%100)/100;
 document.getElementById("fc").innerHTML ="<fl>"+"2.27= "+x+"</fl>";
-
-
+x=(n-n%100)/10+n%10+(n%100-n%10)*10;
 document.getElementById("fe").innerHTML ="<fl>"+"2.29= "+x+"</fl>";
-
-
+x=((n-n%100)/10+n%10)*10+(n%100-n%10)/10;
 document.getElementById("fg").innerHTML ="<fl>"+"2.31= "+x+"</fl>";
-
-
+x=(n%100-n%10)+(n-n%100)/100+n%10*100;
 document.getElementById("fi").innerHTML ="<fl>"+"2.33= "+x+"</fl>";
 }
 </script>
 <br>
 
 <br>
-2.25-2.33
+2.25-2.33(нечетные)
 <br>
-a=<input type="text" value="0" id="a_znach">
+х=<input type="text" value="0" id="a_znach">
 <br>
 <br>
 <button onclick="func()">ответ</button>
