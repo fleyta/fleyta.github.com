@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -30,6 +29,21 @@ ctx.strokeRect(330, 200, 10, 250);
 
 ctx.strokeRect(330, 200, 200, 20);
 
+ctx.strokeRect(340, 20, 300, 220);
+ctx.strokeRect(330, 250, 200, 200);
+
+ctx.rect(340, 0, 400, 230);
+ctx.fillStyle = 'green';
+ctx.fill();
+ctx.rect(340, 255, 400, 180);
+ctx.fillStyle = 'green';
+ctx.fill();
+
+
+ctx.strokeRect(330, 250, 20, 10);
+
+
+
 }
 </script>
 </head>
@@ -38,4 +52,4 @@ ctx.strokeRect(330, 200, 200, 20);
 
 </body>
 
-</html>
+</html>>
