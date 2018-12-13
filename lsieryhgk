@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -19,7 +20,16 @@ ctx.moveTo(320, 0);
 ctx.lineTo(320,480);
 ctx.stroke();
 
-ctx.strokeRect(0, 0, 310, 235);
+ctx.strokeRect(0, 0, 300, 230);
+
+
+ctx.strokeRect(0, 225, 640, 35);
+
+
+ctx.strokeRect(330, 200, 10, 250);
+
+ctx.strokeRect(330, 200, 200, 20);
+
 }
 </script>
 </head>
