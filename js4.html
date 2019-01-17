@@ -77,7 +77,7 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
+} 
 
 	function er3(){
 	var canvas = document.getElementById('example');
@@ -89,14 +89,14 @@ ctx.moveTo(0, 240);
 ctx.lineTo(640, 240);
 ctx.stroke();
 ctx.strokeRect(330, 200, 10, 250);
-x=Number(document.getElementById("x_znach").value); 
+ x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
+} 
 
 	function er4(){
 	var canvas = document.getElementById('example');
@@ -116,7 +116,7 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
+} 
 
 	function er5(){
 	var canvas = document.getElementById('example');
@@ -136,7 +136,7 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
+} 
 	
 		function er6(){
 	var canvas = document.getElementById('example');
@@ -157,7 +157,7 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
+} 
 	
 		function er7(){
 	var canvas = document.getElementById('example');
@@ -170,7 +170,6 @@ ctx.lineTo(640, 240);
 ctx.stroke();
 ctx.strokeRect(330, 250, 20, 10);
 
-
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
@@ -178,7 +177,7 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
+} 
 	
 		function er8(){
 	var canvas = document.getElementById('example');
@@ -198,15 +197,15 @@ ctx.rect(340, 50, 100, 400);
 ctx.fillStyle = 'green';
 ctx.fill();
 
-			x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-}
-				function drawpoint() { 
+} 
+function drawpoint() { 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=320+x*10; 
@@ -219,11 +218,10 @@ ctx.arc(x, y, 2, 0, 2 * Math.PI);
 ctx.stroke(); 
 } 
 	
-	
 		</script>
 	</head>
 	<body>
-		x=<input type="text" value="0" id="x_znach"> 
+	  x=<input type="text" value="0" id="x_znach"> 
 y=<input type="text" value="0" id="y_znach"> 
 	  <a href="#" onclick="clean()" class="button purple">Очистить</a>
   <a href="#" onclick="er1()" class="button purple">3.32а</a>
@@ -237,8 +235,9 @@ y=<input type="text" value="0" id="y_znach">
 <br>
 
 
-<br>
-	<canvas width='640' height='480' id='example'>Обновите браузер</canvas>
+<canvas width='640' height='480' id='example'>Обновите браузер</canvas> 
+<br> 
 
+<div id="otvet"></div>
 	</body>
 </html>
