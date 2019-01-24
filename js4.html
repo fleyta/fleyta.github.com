@@ -150,7 +150,7 @@ ctx.strokeRect(340, 0, 400, 230);
 ctx.strokeRect(340, 255, 400, 180);
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (x >= 2 && y>=1 || x>=2 && y<=3/2) {
+if (x >= 2 && y>=1 || x>=2 && y<=-3/2) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
