@@ -57,13 +57,12 @@ for(var i=-20;i<20;i+=0.01){
   
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if ((x*x+y*y<=60 && x>=0)||(y<=0 && y>=x*x-60)||( x*x+y*y<=60 && y>=x*x-60)) {
+if ((x*x+y*y<=16 && x>=0)||(y<=0 && y>=x*x-6)||( x*x+y*y<=16 && y>=x*x-6 )) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 } 
-
 function drawpoint() { 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
@@ -76,7 +75,6 @@ ctx.strokeStyle = 'green';
 ctx.arc(x, y, 2, 0, 2 * Math.PI); 
 ctx.stroke(); 
 } 
-
 	
 		</script>
 	</head>
@@ -84,8 +82,8 @@ ctx.stroke();
 	  x=<input type="text" value="0" id="x_znach"> 
 y=<input type="text" value="0" id="y_znach"> 
 	  <a href="#" onclick="clean()" class="button purple">Очистить</a>
-  <a href="#" onclick="er1()" class="button purple">3.32а</a>
-  <a href="#" onclick="er2()" class="button purple">3.32б</a>
+  <a href="#" onclick="er1()" class="button purple">batako-son</a>
+
 
 <br>
 
