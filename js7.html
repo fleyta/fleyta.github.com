@@ -52,20 +52,19 @@ ctx.lineTo(640, 240);
 ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value);
-var b=Math.sqrt(x);
+var b=Math.sqrt(4*x/Math.sqrt(3));
 var R=Math.sqrt(y/Math.PI);
-var D=Math.sqrt(2*b*b);
-if (R<b/2) {
+var h=2*x/b;;
+if (R<h/3) {
   alert( 'круг умещается в треугольник' );
 } else {
-  if (R>b/2) {
+  if (R>2*h/3) {
   alert( 'треугольник умещается в круге' );
 } else {
   alert( 'пересечение' );  
 }
 }
 }
-
 function drawpoint1() { 
 x=Number(document.getElementById("x_znach").value); 
 x=320+x*100; 
@@ -75,12 +74,10 @@ var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
 ctx.strokeStyle = 'green'; 
-ctx.moveTo(320-b/2, 240+b/2);
-ctx.lineTo(320, 240-b/2);
-ctx.moveTo(320, 240-b/2);
-ctx.lineTo(320+b/2, 240+b/2);
-ctx.moveTo(320+b/2, 240+b/2);
-ctx.lineTo(320-b/2, 240+b/2);
+ctx.moveTo(320-b/2, 240+h/3);
+ctx.lineTo(320, 240-2*h/3);
+ctx.lineTo(320+b/2, 240+h/3);
+ctx.lineTo(320-b/2, 240+h/3);
 ctx.closePath();
 ctx.stroke(); 
 }
@@ -97,11 +94,11 @@ ctx.stroke();
 </script> 
 </head> 
 <body> 
-<br><br><br>площадь треугольника<input type="text" value="5" id="x_znach">
-площадь кругасана<input type="text" value="6" id="y_znach">
+<br><br><br>площадь треугольника<input type="text" value="500" id="x_znach">
+площадь кругасана<input type="text" value="600" id="y_znach">
 <a href="#" onclick="clean()" class="button purple">очистить</a> 
 <a href="#" onclick="er1()" class="button purple">орёл</a> 
-<a href="#" onclick="drawpoint1()" class="button purple">орё``л</a> 
+
 <br><br>
 <canvas width='640' height='480' id='example'>Обновите браузер</canvas> 
 <br> 
