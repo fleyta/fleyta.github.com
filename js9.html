@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+
+      var i = 20;
+      while (i <= 35) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br>";
+        i++;
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("b_f2_znach").value);
+      var i = 10;
+      while (i <= n) {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + " ";
+        i++;
+      } w
+    }
+
+   
+
+    
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Целые чмсла от 20 до 35</h1> 
+ 
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>квадраты чисел от 10</h1> 
+  b= <input type="text" value="11" id="b_f2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+ 
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
