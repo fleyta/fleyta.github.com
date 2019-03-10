@@ -20,7 +20,14 @@
         i++;
       } 
     }
-
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var i = n;
+      while (i <= 50) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i*i*i + "<br>";
+        i++;
+      }
+    }
    
 
     
@@ -46,7 +53,11 @@
   <br>
   <br>
   <br>
- 
+ <h1>кубы чисел до 50</h1> a=
+  <input type="text" value="18" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet3"></div>
+<br>
 <br>
   <br>
   <br>
