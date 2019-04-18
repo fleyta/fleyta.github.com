@@ -6,11 +6,11 @@
 
  function func2() {
       n = Number(document.getElementById("n_f2_znach").value);
-      var i = 0;
+      var i = n;
       do {
         document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
-        i++;
-      } while (i < n);
+        i--;
+      } while (i > -1);
     }
     
      </script>
