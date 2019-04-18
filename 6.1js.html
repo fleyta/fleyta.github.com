@@ -7,12 +7,14 @@
       n = Number(document.getElementById("n_f2_znach").value);
       var i = n;
       var S=0;
+      var c=0;
       do {
         S=S+i;
+        c++;
         document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +" "+ S + "<br> ";
         i--;
       } while (i > -1);
-    }
+    document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + c-- + "<br>"; }
     
      </script>
 </head>
