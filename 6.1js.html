@@ -3,12 +3,13 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <script>
-
  function func2() {
       n = Number(document.getElementById("n_f2_znach").value);
       var i = n;
+      var S=0;
       do {
-        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
+        S=S+i;
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +" "+ S + "<br> ";
         i--;
       } while (i > -1);
     }
